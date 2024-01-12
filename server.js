@@ -4,11 +4,7 @@ import cors from "cors";
 import videoRouter from "./routes/video.js";
 const app = express();
 
-app.use(
-  cors({
-    origin: "*",
-  })
-);
+app.use(cors());
 
 app.use(videoRouter);
 
